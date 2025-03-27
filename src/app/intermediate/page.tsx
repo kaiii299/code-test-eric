@@ -20,7 +20,7 @@ const Page = () => {
       <ScrollCircleProgress progress={scrollYProgress} />
 
       {/* Scrollable Content */}
-      <section ref={ref} className="text-black">
+      <section ref={ref} className="text-black overflow-x-hidden">
         <div className="w-screen h-[50vh] bg-red-200 flex justify-center items-center">
           <span className="text-7xl">Scroll</span>
         </div>
