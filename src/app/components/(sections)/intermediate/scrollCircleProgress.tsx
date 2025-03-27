@@ -22,7 +22,7 @@ const ScrollCircleProgress = ({ progress }: Props) => {
   };
 
   return (
-    <button className="fixed bottom-6 right-6 w-16 h-16 z-50" onClick={scrollToTop}>
+    <button className="fixed bottom-6 right-6 w-16 h-16 z-50 cursor-pointer" onClick={scrollToTop}>
       <div className="absolute inset-0 flex items-center justify-center text-black pointer-events-none">
         {/* Arrow Icon */}
         <ArrowUp className="w-5 h-5 z-10" color="black" />
