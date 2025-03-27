@@ -17,8 +17,12 @@ const ScrollCircleProgress = ({ progress }: Props) => {
     [circumference, 0]
   );
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="fixed bottom-6 right-6 w-16 h-16 z-50">
+    <button className="fixed bottom-6 right-6 w-16 h-16 z-50" onClick={scrollToTop}>
       <div className="absolute inset-0 flex items-center justify-center text-black pointer-events-none">
         {/* Arrow Icon */}
         <ArrowUp className="w-5 h-5 z-10" color="black" />
@@ -47,7 +51,7 @@ const ScrollCircleProgress = ({ progress }: Props) => {
           style={{ strokeDashoffset }}
         />
       </svg>
-    </div>
+    </button>
   );
 };
 
