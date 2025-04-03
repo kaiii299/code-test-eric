@@ -23,7 +23,7 @@ export default function HeroSection() {
   const handleIntroEnd = () => {
     setShowIntro(false);
     if (loopRef.current) {
-      loopRef.current.currentTime = 0;
+      loopRef.current.currentTime = 0; 
       loopRef.current.play();
     }
   };
