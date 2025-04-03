@@ -6,7 +6,7 @@ export const navLinks = [
         label: "Career",
         href: "/",
     },{
-        label: "Contacs",
+        label: "Contacts",
         href: "/",
     }
 ];

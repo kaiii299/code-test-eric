@@ -13,7 +13,7 @@ const BoxButton = () => {
       href="#contact"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="w-[30vw] max-w-[33.7rem] h-[150px] rounded-sm group cursor-pointer bg-[#1e2556] p-4 flex flex-col justify-between shadow-md"
+      className="md:w-[24vw] w-full max-w-none md:max-w-[33.7rem]  md:h-[7vw] h-[15vh] rounded-sm group cursor-pointer bg-[#1e2556] p-4 flex flex-col justify-between shadow-md"
     >
       <div className="flex-grow" />
       <div className="flex items-center justify-between">

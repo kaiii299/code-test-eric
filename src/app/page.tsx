@@ -17,7 +17,7 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
 
   return (
-    <main className="relative w-full">
+    <main className="relative w-full overflow-hidden">
       {/* Hero Section (scrolls normally) */}
       <section className="relative w-full h-screen overflow-hidden">
         {/* Video in the background */}
