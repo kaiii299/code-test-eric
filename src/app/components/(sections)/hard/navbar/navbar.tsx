@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { navLinks } from "@/app/constants";
 import WaveText from "../text-animations/wave-text";
-import { AnimatePresence, hover, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import Link from "next/link";

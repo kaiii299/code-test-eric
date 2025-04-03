@@ -1,10 +1,8 @@
 import React from "react";
 import Boxbutton from "../Buttons/box-button";
-import { ArrowDown, ArrowRight, Settings, Star } from "lucide-react";
-import WaveText from "../text-animations/wave-text";
-type Props = {};
+import { ArrowDown } from "lucide-react";
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div className="relative z-10 w-full h-full max-h-[100vh] inset-0 overflow-hidden p-5 ">
       {/* Top half */}
