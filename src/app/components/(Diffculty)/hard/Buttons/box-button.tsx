@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import React, { useState } from "react";
-import WaveText from "../text-animations/wave-text";
+import WaveText from "../../../../../lib/text-animations/wave-text";
 
 const BoxButton = () => {
   const [isHovered, setIsHovered] = useState(false);

@@ -2,8 +2,8 @@
 
 import { useScroll } from "framer-motion";
 import React, { useRef } from "react";
-import ScrollSidebar from "../components/(sections)/intermediate/scrollSidebar";
-import ScrollCircleProgress from "../components/(sections)/intermediate/scrollCircleProgress";
+import ScrollSidebar from "../components/(Diffculty)/intermediate/scrollSidebar";
+import ScrollCircleProgress from "../components/(Diffculty)/intermediate/scrollCircleProgress";
 
 const Page = () => {
   const ref = useRef(null);

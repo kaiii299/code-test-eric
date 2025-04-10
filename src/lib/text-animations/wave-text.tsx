@@ -81,7 +81,7 @@ const WaveText = ({ text, className = "", animate = false }: Props) => {
               </motion.span>
 
               {/* Second char slides in from below */}
-              <motion.span
+              <motion.span 
                 className="absolute top-0 left-0"
                 custom={i}
                 initial="initial"

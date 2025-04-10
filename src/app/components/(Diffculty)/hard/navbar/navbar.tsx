@@ -1,21 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { navLinks } from "@/app/constants";
-import WaveText from "../text-animations/wave-text";
+import { navLinks } from "@/lib/constants";
+import WaveText from "../../../../../lib/text-animations/wave-text";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import Link from "next/link";
+// type NavLink = {
+//   label string;
+//   href: string;
+//   className?: string;
+//   textSize?: string;
+// };
 
-type NavLink = {
-  label: string;
-  href: string;
-  className?: string;
-  textSize?: string;
-};
-
-const NavItem = ({ label, href, className, textSize }: NavLink) => {
+const NavItem = ({ label, href, className, textSize }: any) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -82,7 +81,7 @@ export default function Navbar() {
           >
             {navLinks.map((link) => (
               <NavItem
-                key={link.label}
+                key={link.title}
                 {...link}
                 className={`transition-all duration-200 ${
                   menuOpen ? "text-black" : "text-white"
@@ -186,20 +185,20 @@ export default function Navbar() {
                       className="text-gray-500"
                     />
                     {navLinks.map((link) => (
-                      <NavItem key={link.label} {...link} textSize="text-4xl" />
+                      <NavItem key={link.title} {...link} textSize="text-4xl" />
                     ))}
                   </div>
 
                   <div className="flex flex-col items-start justify-end z-[100] space-y-1">
                     <TiSocialLinkedinCircular size={25} />
-                    <Link href="mailto:nihao.codenest@gmail.com">
+                    <Link href="mailto:hello@codenest.sg">
                       <motion.div
                         onHoverStart={() => setHovered(true)}
                         onHoverEnd={() => setHovered(false)}
                       >
                         <WaveText
-                          text="nihao.codenest@gmail.com"
-                          className="text-md line-height-[1ch] cursor-pointer"
+                          text="hello@codenest.sg"
+                          className="text-md cursor-pointer"
                           animate={hovered}
                         />
                       </motion.div>

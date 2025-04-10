@@ -1,5 +1,5 @@
 import React from "react";
-import Boxbutton from "../Buttons/box-button";
+import Boxbutton from "@/app/components/(Diffculty)/hard/Buttons/box-button";
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {

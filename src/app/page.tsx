@@ -2,8 +2,9 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Hero from "./components/(sections)/hard/hero-section/hero";
-import Hero_video from "./components/(sections)/hard/hero-section/hero-video/hero-video";
+import Hero from "./components/(Diffculty)/hard/(sections)/hero-section/hero";
+import Hero_video from "./components/(Diffculty)/hard/(sections)/hero-section/hero-video/hero-video";
+import { useLenis } from "lenis/react";
 
 export default function Home() {
   const secondRef = useRef(null);
@@ -15,7 +16,7 @@ export default function Home() {
 
   // Slide red section upward from 10% below to its final position
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-
+  
   return (
     <main className="relative w-full overflow-hidden">
       {/* Hero Section (scrolls normally) */}

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/(sections)/hard/navbar/navbar";
+import ReactLenis from "lenis/react";
+import Header from "./components/(Diffculty)/hard/navbar/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,12 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-      </body>
+      <ReactLenis root options={{
+        lerp: 0.03, duration:2.2
+      }}>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Header/>
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }
