@@ -2,9 +2,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Nav from "./nav";
+import Nav from "../nav";
 import Image from "next/image";
-import styles from "@/app/styles/nav-style.module.css"
+import styles from "./style.module.scss"
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);

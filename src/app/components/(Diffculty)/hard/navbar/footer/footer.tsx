@@ -1,6 +1,7 @@
 import { translate } from "@/lib/animations";
 import { motion } from "framer-motion";
-import styles from "@/app/styles/footer-style.module.css"
+import styles from "@/app/components/(Diffculty)/hard/navbar/footer/style.module.scss"
+
 export default function Footer() {
   return (
     <div className={styles.footer}>

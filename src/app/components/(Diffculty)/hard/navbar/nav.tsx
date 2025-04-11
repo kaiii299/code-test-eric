@@ -1,16 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import styles from "@/app/styles/nav-style.module.css"
 import { height } from "@/lib/animations";
 import { navLinks } from "@/lib/constants";
 import { useState } from "react";
-import Body from "./body";
-import Footer from "./footer";
-import NavImageComponent from "./image";
+import Body from "./body/body";
+import Footer from "./footer/footer";
+import NavImageComponent from "./image/image";
+import styles from "./style.module.scss"
 
-type Props = {};
-
-const Nav = (props: Props) => {
+const Nav = () => {
   const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,
@@ -31,7 +29,6 @@ const Nav = (props: Props) => {
             selectedLink={selectedLink}
             setSelectedLink={setSelectedLink}
           />
-
           <Footer />
         </div>
 

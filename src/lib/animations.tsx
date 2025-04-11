@@ -23,9 +23,8 @@ export const height = {
     height: "auto",
     transition,
   },
-
   exit: {
-    height: 0,
+    height: 0 ,
     transition,
   },
 };
@@ -52,7 +51,6 @@ export const blur = {
 export const translate = {
   initial: {
     y: "100%",
-
     opacity: 0,
   },
 

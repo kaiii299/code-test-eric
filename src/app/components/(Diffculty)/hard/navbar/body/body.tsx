@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import styles from "@/app/styles/nav-style.module.css"
+import styles from "@/app/components/(Diffculty)/hard/navbar/body/style.module.scss"
 import { translate, blur } from "@/lib/animations";
 
 // Define types
